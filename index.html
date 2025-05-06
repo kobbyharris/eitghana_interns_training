@@ -1,0 +1,64 @@
+<html>
+    <script>
+        let print = console.log;
+        let myName = "Norman Jean";
+        const age = 25;
+        var isLoggedIn = true;
+        console.log(`Hello world my name is ${myName} and my age is ${age} and i am ${isLoggedIn}`)
+
+      
+        //let, const, var
+        //Area of a  circle
+        const pi = 3.14;
+        r = 5;
+        let area = pi * r * r;
+        console.log(area);
+
+        //operations
+        let x = 10+5;
+        let y = 10-5;
+        let z = 10*5;
+        let w = 10/5;
+        let remainder = 10%5;
+        
+        console.log(`Results for operation are, addition: ${x}, subtraction: ${y}, multiplication: ${z}, division: ${w}, remainder: ${remainder}`)
+
+        //logical operators
+        let isAdult = age >= 18 && age <= 65;
+        console.log(`This is an  adult: ${isAdult}`)
+
+        let isStudent = age < 18 || age > 65;
+        console.log(`This is a student: ${isStudent}`)
+
+        let notLoggedIn = !isLoggedIn;
+        console.log(`This is not is logged in: ${isStudent}`)
+
+        //conditional statements
+        let score = 75;
+
+        if (score >= 90){
+            print("A")
+        } else if (score >= 80){
+            print("B")
+        }else if (score >= 70){
+            print("C")
+        }else {
+            print("Fail")
+        }
+
+        //loops
+        for (let i = 1; i <= 5; i++){
+            print("for Count:" + i)
+        }
+
+        let current_count = 1;
+        while(current_count <= 3){
+            print(" while Looping:", current_count)
+            current_count ++
+        }
+
+    </script>
+    <body>
+        <h6>Hello world</h6>
+    </body>
+</html>
