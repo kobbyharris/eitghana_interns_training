@@ -1,64 +1,89 @@
 <html>
-    <script>
-        let print = console.log;
-        let myName = "Norman Jean";
-        const age = 25;
-        var isLoggedIn = true;
-        console.log(`Hello world my name is ${myName} and my age is ${age} and i am ${isLoggedIn}`)
+  <script>
+    let print = console.log;
+    let myName = "Norman Jean";
+    const age = 25;
+    var isLoggedIn = true;
+    console.log(
+      `Hello world my name is ${myName} and my age is ${age} and i am ${isLoggedIn}`
+    );
 
-      
-        //let, const, var
-        //Area of a  circle
-        const pi = 3.14;
-        r = 5;
-        let area = pi * r * r;
-        console.log(area);
+    //let, const, var
+    //Area of a  circle
+    const pi = 3.14;
+    r = 5;
+    let area = pi * r * r;
+    console.log(area);
 
-        //operations
-        let x = 10+5;
-        let y = 10-5;
-        let z = 10*5;
-        let w = 10/5;
-        let remainder = 10%5;
-        
-        console.log(`Results for operation are, addition: ${x}, subtraction: ${y}, multiplication: ${z}, division: ${w}, remainder: ${remainder}`)
+    //operations
+    let x = 10 + 5;
+    let y = 10 - 5;
+    let z = 10 * 5;
+    let w = 10 / 5;
+    let remainder = 10 % 5;
 
-        //logical operators
-        let isAdult = age >= 18 && age <= 65;
-        console.log(`This is an  adult: ${isAdult}`)
+    console.log(
+      `Results for operation are, addition: ${x}, subtraction: ${y}, multiplication: ${z}, division: ${w}, remainder: ${remainder}`
+    );
 
-        let isStudent = age < 18 || age > 65;
-        console.log(`This is a student: ${isStudent}`)
+    //logical operators
+    let isAdult = age >= 18 && age <= 65;
+    console.log(`This is an  adult: ${isAdult}`);
 
-        let notLoggedIn = !isLoggedIn;
-        console.log(`This is not is logged in: ${isStudent}`)
+    let isStudent = age < 18 || age > 65;
+    console.log(`This is a student: ${isStudent}`);
 
-        //conditional statements
-        let score = 75;
+    let notLoggedIn = !isLoggedIn;
+    console.log(`This is not is logged in: ${isStudent}`);
 
-        if (score >= 90){
-            print("A")
-        } else if (score >= 80){
-            print("B")
-        }else if (score >= 70){
-            print("C")
-        }else {
-            print("Fail")
-        }
+    //conditional statements
+    let score = 75;
 
-        //loops
-        for (let i = 1; i <= 5; i++){
-            print("for Count:" + i)
-        }
+    if (score >= 90) {
+      print("A");
+    } else if (score >= 80) {
+      print("B");
+    } else if (score >= 70) {
+      print("C");
+    } else {
+      print("Fail");
+    }
 
-        let current_count = 1;
-        while(current_count <= 3){
-            print(" while Looping:", current_count)
-            current_count ++
-        }
+    //loops
+    // i for loops
+    for (let i = 1; i <= 5; i++) {
+      print("for Count:" + i);
+    }
+    // ii while loops
+    let current_count = 1;
+    while (current_count <= 3) {
+      print(" while Looping:", current_count);
+      current_count++;
+    }
+    // iii do while loops
+    let tries = 0;
+    do {
+      print("Try", tries, tries + 1);
+      tries++;
+    } while (tries < 4);
+    //Function
+    //Delcaring a function
+    function greet(name) {
+      return "Hello, " + name + "!";
+    }
+    print(greet("Harrison"));
+    //Arrow function
+    const rectangle_area = (length, breath) => "The leghth of the rectangle is: " + length * breath;
+    print(rectangle_area(3, 2));
 
-    </script>
-    <body>
-        <h6>Hello world</h6>
-    </body>
+    //Conditional functions
+    function getRole(roldeId){
+        if(roldeId === 1) return "Admin";
+        if(roldeId === 2) return "User"
+    }
+    print(getRole(2))
+  </script>
+  <body>
+    <h6>Hello world</h6>
+  </body>
 </html>
